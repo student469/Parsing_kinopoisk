@@ -43,6 +43,5 @@ user_votes = collect_user_votes(user_login='2206841')
 
 print(user_votes[:15])
 
-print(f'Количество собранных голосов: {len(user_votes)}')
 with open('user_votes.json', 'w', encoding='utf-8') as json_file:
     json.dump(user_votes, json_file, ensure_ascii=False, indent=4)
